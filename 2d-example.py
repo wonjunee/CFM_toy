@@ -73,7 +73,7 @@ class Net(torch.nn.Module):
     def __init__(self, zdim = 100):
         super(Net, self).__init__()
         self.zdim = zdim
-        dd = 500
+        dd = 32
 
         self.model = nn.Sequential(
             nn.Linear(zdim+1, dd),
